@@ -145,6 +145,8 @@ app.post("/generate-pdf", async (req, res) => {
 
 
 
-app.listen(process.env.PORT || 1338, () => console.log("running on "+process.env.PORT));
+app.listen(1338, '0.0.0.0', () => {
+  console.log('Server is running on port 1338');
+});
 
 
